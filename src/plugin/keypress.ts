@@ -23,6 +23,10 @@ export default function (mind: MindElixirInstance) {
       // tab
       mind.addChild()
     },
+    45: () => {
+      // insert
+      mind.addChild()
+    },
     113: () => {
       // f2
       mind.beginEdit()

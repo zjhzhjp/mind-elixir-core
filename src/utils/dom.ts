@@ -159,8 +159,9 @@ export const createInputDiv = function (this: MindElixirInstance, el: Topic) {
     const node = el.nodeObj
     const topic = div.textContent?.trim() || ''
     console.log(topic)
-    if (topic === '') node.topic = origin
-    else node.topic = topic
+    // if (topic === '') node.topic = origin
+    // else node.topic = topic
+    node.topic = topic
     div.remove()
     // memory leak?
     this.inputDiv = null
